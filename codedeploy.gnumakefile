@@ -1,4 +1,18 @@
 #
+ifndef APPLICATION_NAME
+$(error APPLICATION_NAME is not defined)
+endif
+ifndef AWS_PROFILE
+$(error AWS_PROFILE is not defined)
+endif
+ifndef AWS_REGION
+$(error AWS_REGION is not defined)
+endif
+ifndef S3_BUCKET
+$(error S3_BUCKET is not defined)
+endif
+
+#
 GIT_BRANCH!=		git rev-parse --abbrev-ref HEAD
 GIT_DIRTY!=		git diff-files --quiet; echo $$?
 GIT_HASH!=		git rev-parse HEAD
