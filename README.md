@@ -1,6 +1,6 @@
 # codedeploy-makefile
 
-## Requirement
+## Requirements
 
 * AWS CLI
 * Git
