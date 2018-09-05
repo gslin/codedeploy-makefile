@@ -1,5 +1,7 @@
 # codedeploy-makefile
 
+Create `make deploy` and `make deploy-force` (and alias `make force-deploy`) shortcuts.
+
 ## Requirements
 
 * AWS CLI
