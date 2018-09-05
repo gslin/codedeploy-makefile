@@ -21,6 +21,8 @@ GIT_HASH!=		git rev-parse HEAD
 NOW!=			date -u +%Y%m%d-%H%M%S
 S3_KEY=			${APPLICATION_NAME}/${GIT_BRANCH}-${NOW}-${GIT_HASH}
 
+.PHONY:			deploy deploy-force force-deploy _git_dirty
+
 #
 deploy: _git_dirty deploy-force
 	@true
