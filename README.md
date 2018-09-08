@@ -14,6 +14,14 @@ Use git submodule to include it, then add this into the bottom of your `GNUmakef
 
     -include codedeploy-makefile/codedeploy.gnumakefile
 
+## Setup
+
+This command will create S3 bucket and CodeDeploy application:
+
+    make setup-deploy
+
+You still need to create deployment group youself.
+
 Then specify these variables in `GNUmakefile`:
 
 * `APPLICATION_NAME`
