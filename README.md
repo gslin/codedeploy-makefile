@@ -10,7 +10,11 @@ Create `make deploy` and `make deploy-force` (and alias `make force-deploy`) sho
 
 ## Usage
 
-Use git submodule to include it, then add this into the bottom of your `GNUmakefile`:
+Use git submodule to include it:
+
+    git submodule add https://github.com/gslin/codedeploy-makefile.git
+
+Then add this into the bottom of your `GNUmakefile`:
 
     -include codedeploy-makefile/codedeploy.gnumakefile
 
