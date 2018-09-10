@@ -35,7 +35,7 @@ Then specify these variables in `GNUmakefile`:
 
 ## Pre-actions
 
-You can override with double colon:
+You can override with double colon rules:
 
     deploy::
             cp ".env.${GIT_BRANCH}" .env
