@@ -33,6 +33,13 @@ Then specify these variables in `GNUmakefile`:
 * `AWS_REGION`
 * `S3_BUCKET`
 
+## Pre-actions
+
+You can override with double colon:
+
+    deploy::
+            cp ".env.${GIT_BRANCH}" .env
+
 ## License
 
 See [LICENSE](LICENSE).
