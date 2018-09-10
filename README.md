@@ -37,7 +37,7 @@ Then specify these variables in `GNUmakefile`:
 
 You can override with double colon rules:
 
-    deploy::
+    deploy-force::
             cp ".env.${GIT_BRANCH}" .env
 
 ## License
